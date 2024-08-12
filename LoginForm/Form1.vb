@@ -14,6 +14,7 @@ Public Class Form1
         passwordtextbox.PasswordChar = ""
         usernametextbox.ForeColor = Color.Gray
         passwordtextbox.ForeColor = Color.Gray
+        Me.ActiveControl = wallpaper
     End Sub
 
     Private Sub hidepasslogo_Click(sender As Object, e As EventArgs) Handles hidepasslogo.Click
@@ -83,5 +84,9 @@ Public Class Form1
 
     Private Sub Form1_Click(sender As Object, e As EventArgs) Handles wallpaper.Click, PictureBox3.Click, MyBase.Click, inputarea.Click
         Me.ActiveControl = Nothing
+    End Sub
+
+    Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
+
     End Sub
 End Class

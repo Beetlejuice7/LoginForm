@@ -143,5 +143,17 @@
   <ItemGroup>
     <None Include="Resources\hide30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeclose30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

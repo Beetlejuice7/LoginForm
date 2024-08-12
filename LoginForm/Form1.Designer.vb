@@ -118,7 +118,7 @@ Partial Class Form1
         'hideit
         '
         Me.hideit.BackColor = System.Drawing.Color.White
-        Me.hideit.Image = Global.LoginForm.My.Resources.Resources.hide30
+        Me.hideit.Image = Global.LoginForm.My.Resources.Resources.eyeclose30
         Me.hideit.Location = New System.Drawing.Point(545, 284)
         Me.hideit.Margin = New System.Windows.Forms.Padding(2)
         Me.hideit.Name = "hideit"
@@ -131,7 +131,7 @@ Partial Class Form1
         '
         Me.showpasslogo.BackColor = System.Drawing.Color.White
         Me.showpasslogo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.showpasslogo.Image = Global.LoginForm.My.Resources.Resources.hide
+        Me.showpasslogo.Image = Global.LoginForm.My.Resources.Resources.eyeclose
         Me.showpasslogo.Location = New System.Drawing.Point(545, 284)
         Me.showpasslogo.Margin = New System.Windows.Forms.Padding(2)
         Me.showpasslogo.Name = "showpasslogo"
@@ -144,7 +144,7 @@ Partial Class Form1
         '
         Me.hidepasslogo.BackColor = System.Drawing.Color.White
         Me.hidepasslogo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.hidepasslogo.Image = Global.LoginForm.My.Resources.Resources.show
+        Me.hidepasslogo.Image = Global.LoginForm.My.Resources.Resources.view
         Me.hidepasslogo.Location = New System.Drawing.Point(545, 284)
         Me.hidepasslogo.Margin = New System.Windows.Forms.Padding(2)
         Me.hidepasslogo.Name = "hidepasslogo"
