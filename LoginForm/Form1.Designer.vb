@@ -22,208 +22,219 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.showpasslogo = New System.Windows.Forms.PictureBox()
+        Me.loginbtn = New System.Windows.Forms.Button()
+        Me.signuplabel = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.forgetpasslabel = New System.Windows.Forms.Label()
+        Me.passwordtextbox = New System.Windows.Forms.TextBox()
+        Me.passwordlogo = New System.Windows.Forms.PictureBox()
+        Me.usernamelogo = New System.Windows.Forms.PictureBox()
+        Me.wallpaper = New System.Windows.Forms.PictureBox()
+        Me.usernametextbox = New System.Windows.Forms.TextBox()
+        Me.inputarea = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.hidepasslogo = New System.Windows.Forms.PictureBox()
+        CType(Me.showpasslogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.passwordlogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.usernamelogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.wallpaper, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.inputarea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.hidepasslogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox6
+        'showpasslogo
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.White
-        Me.PictureBox6.Image = Global.LoginForm.My.Resources.Resources.hide
-        Me.PictureBox6.Location = New System.Drawing.Point(1092, 339)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(34, 35)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 33
-        Me.PictureBox6.TabStop = False
+        Me.showpasslogo.BackColor = System.Drawing.Color.White
+        Me.showpasslogo.Image = Global.LoginForm.My.Resources.Resources.hide
+        Me.showpasslogo.Location = New System.Drawing.Point(545, 285)
+        Me.showpasslogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.showpasslogo.Name = "showpasslogo"
+        Me.showpasslogo.Size = New System.Drawing.Size(17, 18)
+        Me.showpasslogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.showpasslogo.TabIndex = 33
+        Me.showpasslogo.TabStop = False
         '
-        'Button1
+        'loginbtn
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(904, 480)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(148, 40)
-        Me.Button1.TabIndex = 38
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.loginbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.loginbtn.FlatAppearance.BorderSize = 0
+        Me.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.loginbtn.ForeColor = System.Drawing.Color.White
+        Me.loginbtn.Location = New System.Drawing.Point(451, 358)
+        Me.loginbtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.loginbtn.Name = "loginbtn"
+        Me.loginbtn.Size = New System.Drawing.Size(74, 21)
+        Me.loginbtn.TabIndex = 38
+        Me.loginbtn.TabStop = False
+        Me.loginbtn.Text = "Login"
+        Me.loginbtn.UseVisualStyleBackColor = False
         '
-        'Label4
+        'signuplabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.LightGray
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label4.Location = New System.Drawing.Point(1050, 660)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 30)
-        Me.Label4.TabIndex = 37
-        Me.Label4.Text = "Sign Up"
+        Me.signuplabel.AutoSize = True
+        Me.signuplabel.BackColor = System.Drawing.Color.LightGray
+        Me.signuplabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.signuplabel.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.signuplabel.Location = New System.Drawing.Point(524, 452)
+        Me.signuplabel.Name = "signuplabel"
+        Me.signuplabel.Size = New System.Drawing.Size(55, 16)
+        Me.signuplabel.TabIndex = 37
+        Me.signuplabel.Text = "Sign Up"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.LightGray
-        Me.Label3.Location = New System.Drawing.Point(806, 664)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(402, 454)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(239, 25)
+        Me.Label3.Size = New System.Drawing.Size(123, 13)
         Me.Label3.TabIndex = 36
         Me.Label3.Text = "Don’t have an account?"
         '
-        'Label2
+        'forgetpasslabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.LightGray
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(888, 545)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(188, 26)
-        Me.Label2.TabIndex = 35
-        Me.Label2.Text = "Forget Password?"
+        Me.forgetpasslabel.AutoSize = True
+        Me.forgetpasslabel.BackColor = System.Drawing.Color.LightGray
+        Me.forgetpasslabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.forgetpasslabel.Location = New System.Drawing.Point(443, 392)
+        Me.forgetpasslabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.forgetpasslabel.Name = "forgetpasslabel"
+        Me.forgetpasslabel.Size = New System.Drawing.Size(92, 13)
+        Me.forgetpasslabel.TabIndex = 35
+        Me.forgetpasslabel.Text = "Forget Password?"
         '
-        'TextBox2
+        'passwordtextbox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(862, 335)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(6)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(272, 41)
-        Me.TextBox2.TabIndex = 34
+        Me.passwordtextbox.Location = New System.Drawing.Point(430, 283)
+        Me.passwordtextbox.Multiline = True
+        Me.passwordtextbox.Name = "passwordtextbox"
+        Me.passwordtextbox.Size = New System.Drawing.Size(138, 23)
+        Me.passwordtextbox.TabIndex = 34
         '
-        'PictureBox5
+        'passwordlogo
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox5.Image = Global.LoginForm.My.Resources.Resources.padlock_2
-        Me.PictureBox5.Location = New System.Drawing.Point(774, 339)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 32
-        Me.PictureBox5.TabStop = False
+        Me.passwordlogo.BackColor = System.Drawing.Color.LightGray
+        Me.passwordlogo.Image = Global.LoginForm.My.Resources.Resources.padlock_2
+        Me.passwordlogo.Location = New System.Drawing.Point(386, 285)
+        Me.passwordlogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.passwordlogo.Name = "passwordlogo"
+        Me.passwordlogo.Size = New System.Drawing.Size(20, 21)
+        Me.passwordlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.passwordlogo.TabIndex = 32
+        Me.passwordlogo.TabStop = False
         '
-        'PictureBox4
+        'usernamelogo
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox4.Image = Global.LoginForm.My.Resources.Resources.user
-        Me.PictureBox4.Location = New System.Drawing.Point(774, 220)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 31
-        Me.PictureBox4.TabStop = False
+        Me.usernamelogo.BackColor = System.Drawing.Color.LightGray
+        Me.usernamelogo.Image = Global.LoginForm.My.Resources.Resources.user
+        Me.usernamelogo.Location = New System.Drawing.Point(386, 223)
+        Me.usernamelogo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.usernamelogo.Name = "usernamelogo"
+        Me.usernamelogo.Size = New System.Drawing.Size(20, 21)
+        Me.usernamelogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.usernamelogo.TabIndex = 31
+        Me.usernamelogo.TabStop = False
         '
-        'PictureBox1
+        'wallpaper
         '
-        Me.PictureBox1.Image = Global.LoginForm.My.Resources.Resources.Mountain
-        Me.PictureBox1.Location = New System.Drawing.Point(36, 58)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(622, 658)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 28
-        Me.PictureBox1.TabStop = False
+        Me.wallpaper.Image = Global.LoginForm.My.Resources.Resources.Mountain
+        Me.wallpaper.Location = New System.Drawing.Point(17, 139)
+        Me.wallpaper.Name = "wallpaper"
+        Me.wallpaper.Size = New System.Drawing.Size(311, 342)
+        Me.wallpaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.wallpaper.TabIndex = 28
+        Me.wallpaper.TabStop = False
         '
-        'TextBox1
+        'usernametextbox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(862, 220)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(6)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(272, 41)
-        Me.TextBox1.TabIndex = 27
+        Me.usernametextbox.Location = New System.Drawing.Point(430, 223)
+        Me.usernametextbox.Multiline = True
+        Me.usernametextbox.Name = "usernametextbox"
+        Me.usernametextbox.Size = New System.Drawing.Size(138, 23)
+        Me.usernametextbox.TabIndex = 27
         '
-        'PictureBox2
+        'inputarea
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox2.Location = New System.Drawing.Point(652, 58)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(622, 658)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 29
-        Me.PictureBox2.TabStop = False
+        Me.inputarea.BackColor = System.Drawing.Color.LightGray
+        Me.inputarea.Location = New System.Drawing.Point(325, 139)
+        Me.inputarea.Name = "inputarea"
+        Me.inputarea.Size = New System.Drawing.Size(311, 342)
+        Me.inputarea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.inputarea.TabIndex = 29
+        Me.inputarea.TabStop = False
         '
         'PictureBox3
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.CadetBlue
+        Me.PictureBox3.BackColor = System.Drawing.Color.DarkSlateGray
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 257)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(6)
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 306)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(1311, 583)
+        Me.PictureBox3.Size = New System.Drawing.Size(653, 303)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 30
         Me.PictureBox3.TabStop = False
         '
+        'hidepasslogo
+        '
+        Me.hidepasslogo.BackColor = System.Drawing.Color.White
+        Me.hidepasslogo.Image = Global.LoginForm.My.Resources.Resources.show
+        Me.hidepasslogo.Location = New System.Drawing.Point(545, 285)
+        Me.hidepasslogo.Margin = New System.Windows.Forms.Padding(2)
+        Me.hidepasslogo.Name = "hidepasslogo"
+        Me.hidepasslogo.Size = New System.Drawing.Size(17, 18)
+        Me.hidepasslogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.hidepasslogo.TabIndex = 39
+        Me.hidepasslogo.TabStop = False
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1311, 840)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label4)
+        Me.ClientSize = New System.Drawing.Size(653, 609)
+        Me.Controls.Add(Me.showpasslogo)
+        Me.Controls.Add(Me.hidepasslogo)
+        Me.Controls.Add(Me.loginbtn)
+        Me.Controls.Add(Me.signuplabel)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.forgetpasslabel)
+        Me.Controls.Add(Me.passwordtextbox)
+        Me.Controls.Add(Me.passwordlogo)
+        Me.Controls.Add(Me.usernamelogo)
+        Me.Controls.Add(Me.wallpaper)
+        Me.Controls.Add(Me.usernametextbox)
+        Me.Controls.Add(Me.inputarea)
         Me.Controls.Add(Me.PictureBox3)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(1332, 911)
         Me.Name = "Form1"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.showpasslogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.passwordlogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.usernamelogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.wallpaper, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.inputarea, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.hidepasslogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label4 As Label
+    Friend WithEvents showpasslogo As PictureBox
+    Friend WithEvents loginbtn As Button
+    Friend WithEvents signuplabel As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents forgetpasslabel As Label
+    Friend WithEvents passwordtextbox As TextBox
+    Friend WithEvents passwordlogo As PictureBox
+    Friend WithEvents usernamelogo As PictureBox
+    Friend WithEvents wallpaper As PictureBox
+    Friend WithEvents usernametextbox As TextBox
+    Friend WithEvents inputarea As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents hidepasslogo As PictureBox
 End Class
