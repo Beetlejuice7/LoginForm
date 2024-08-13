@@ -137,5 +137,11 @@
   <ItemGroup>
     <None Include="Resources\Mountain.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide50%25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
