@@ -1,10 +1,19 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 
 Public Class Form1
     Dim pass As String = "password"
     Dim asterisk As String = "********"
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        InitializePlaceholder()
 
+    End Sub
+    Private Sub InitializePlaceholder()
+        usernametextbox.Text = "Enter username"
+        passwordtextbox.Text = "Enter password"
+        passwordtextbox.PasswordChar = ""
+        usernametextbox.ForeColor = Color.Gray
+        passwordtextbox.ForeColor = Color.Gray
     End Sub
 
     Private Sub hidepasslogo_Click(sender As Object, e As EventArgs) Handles hidepasslogo.Click
@@ -70,5 +79,9 @@ Public Class Form1
 
     Private Sub hidepasslogo_MouseLeave(sender As Object, e As EventArgs) Handles hidepasslogo.MouseLeave
         hidepasslogo.Size = New Size(17, 18)
+    End Sub
+
+    Private Sub Form1_Click(sender As Object, e As EventArgs) Handles wallpaper.Click, PictureBox3.Click, MyBase.Click, inputarea.Click
+        Me.ActiveControl = Nothing
     End Sub
 End Class

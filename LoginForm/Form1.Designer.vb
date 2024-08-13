@@ -49,6 +49,7 @@ Partial Class Form1
         'loginbtn
         '
         Me.loginbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(212, Byte), Integer))
+        Me.loginbtn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.loginbtn.FlatAppearance.BorderSize = 0
         Me.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.loginbtn.ForeColor = System.Drawing.Color.White
@@ -65,6 +66,7 @@ Partial Class Form1
         '
         Me.signuplabel.AutoSize = True
         Me.signuplabel.BackColor = System.Drawing.Color.LightGray
+        Me.signuplabel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.signuplabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.signuplabel.ForeColor = System.Drawing.Color.RoyalBlue
         Me.signuplabel.Location = New System.Drawing.Point(524, 452)
@@ -87,6 +89,7 @@ Partial Class Form1
         '
         Me.forgetpasslabel.AutoSize = True
         Me.forgetpasslabel.BackColor = System.Drawing.Color.LightGray
+        Me.forgetpasslabel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.forgetpasslabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.forgetpasslabel.Location = New System.Drawing.Point(443, 392)
         Me.forgetpasslabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -127,6 +130,7 @@ Partial Class Form1
         'showpasslogo
         '
         Me.showpasslogo.BackColor = System.Drawing.Color.White
+        Me.showpasslogo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.showpasslogo.Image = Global.LoginForm.My.Resources.Resources.hide
         Me.showpasslogo.Location = New System.Drawing.Point(545, 284)
         Me.showpasslogo.Margin = New System.Windows.Forms.Padding(2)
@@ -139,6 +143,7 @@ Partial Class Form1
         'hidepasslogo
         '
         Me.hidepasslogo.BackColor = System.Drawing.Color.White
+        Me.hidepasslogo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.hidepasslogo.Image = Global.LoginForm.My.Resources.Resources.show
         Me.hidepasslogo.Location = New System.Drawing.Point(545, 284)
         Me.hidepasslogo.Margin = New System.Windows.Forms.Padding(2)
