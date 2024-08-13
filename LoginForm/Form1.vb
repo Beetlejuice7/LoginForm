@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports System.Data.SqlClient
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 
 Public Class Form1
@@ -85,8 +86,99 @@ Public Class Form1
     Private Sub Form1_Click(sender As Object, e As EventArgs) Handles wallpaper.Click, PictureBox3.Click, MyBase.Click, inputarea.Click
         Me.ActiveControl = Nothing
     End Sub
+    'For inserting data in database
+    'Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
+
+    '    ' Replace with your actual database connection string
+    '    Dim connectionString As String = "Data Source=192.168.1.69;Initial Catalog=LOGIN;User ID=SA;Password=MyStrongPass123;Encrypt=True;TrustServerCertificate=True"
+
+    '    ' Get the entered username and password
+    '    Dim enteredUsername As String = usernametextbox.Text
+    '    Dim enteredPassword As String = passwordtextbox.Text
+
+    '    Try
+    '        ' Establish a connection to the database
+    '        Using connection As New SqlConnection(connectionString)
+    '            connection.Open()
+
+    '            ' SQL query to insert the username and password
+    '            Dim query As String = "INSERT INTO login (username, password) VALUES (@Username, @Password)"
+
+    '            ' Create a SqlCommand to execute the query
+    '            Using command As New SqlCommand(query, connection)
+    '                ' Add parameters to avoid SQL injection attacks
+    '                command.Parameters.AddWithValue("@Username", enteredUsername)
+    '                command.Parameters.AddWithValue("@Password", enteredPassword)
+
+    '                ' Execute the query
+    '                Dim rowsAffected As Integer = command.ExecuteNonQuery()
+
+    '                ' Check if the insert was successful
+    '                If rowsAffected > 0 Then
+    '                    MessageBox.Show("User registered successfully!")
+    '                Else
+    '                    MessageBox.Show("Registration failed. Please try again.")
+    '                End If
+    '            End Using
+    '        End Using
+    '    Catch ex As Exception
+    '        ' Handle any errors that occur during the database connection or query execution
+    '        MessageBox.Show("An error occurred: " & ex.Message)
+    '    End Try
+    'End Sub
 
     Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
+        ' Replace with your actual database connection string
+        Dim connectionString As String = "Data Source=192.168.1.69;Initial Catalog=LOGIN;User ID=SA;Password=MyStrongPass123;Encrypt=True;TrustServerCertificate=True"
 
+        ' Get the entered username and password from the textboxes
+        Dim enteredUsername As String = usernametextbox.Text
+        Dim enteredPassword As String = passwordtextbox.Text
+
+        Try
+            ' Establish a connection to the database
+            Using connection As New SqlConnection(connectionString)
+                connection.Open()
+
+                ' SQL query to check if the username and password exist in the database
+                Dim query As String = "SELECT COUNT(*) FROM login WHERE username = @Username AND password = @Password"
+
+                ' Create a SqlCommand to execute the query
+                Using command As New SqlCommand(query, connection)
+                    ' Add parameters to prevent SQL injection
+                    command.Parameters.AddWithValue("@Username", enteredUsername)
+                    command.Parameters.AddWithValue("@Password", enteredPassword)
+
+                    ' Execute the query and get the number of matching records
+                    Dim userCount As Integer = CInt(command.ExecuteScalar())
+
+                    ' Check if the credentials are correct
+                    If userCount > 0 Then
+                        MessageBox.Show("Login successful!")
+                    Else
+                        MessageBox.Show("Invalid username or password. Please try again.")
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            ' Handle any errors that occur during the database connection or query execution
+            MessageBox.Show("An error occurred: " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub signuplabel_MouseHover(sender As Object, e As EventArgs) Handles signuplabel.MouseHover
+        signuplabel.ForeColor = Color.Blue
+    End Sub
+
+    Private Sub signuplabel_MouseLeave(sender As Object, e As EventArgs) Handles signuplabel.MouseLeave
+        signuplabel.ForeColor = Color.RoyalBlue
+    End Sub
+
+    Private Sub forgetpasslabel_MouseHover(sender As Object, e As EventArgs) Handles forgetpasslabel.MouseHover
+        forgetpasslabel.ForeColor = Color.Blue
+    End Sub
+
+    Private Sub forgetpasslabel_MouseLeave(sender As Object, e As EventArgs) Handles forgetpasslabel.MouseLeave
+        forgetpasslabel.ForeColor = Color.RoyalBlue
     End Sub
 End Class
