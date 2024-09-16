@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
-
+'testing
 Public Class Form1
     Dim pass As String = "password"
     Dim asterisk As String = "********"
