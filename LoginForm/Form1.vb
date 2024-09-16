@@ -181,4 +181,9 @@ Public Class Form1
     Private Sub forgetpasslabel_MouseLeave(sender As Object, e As EventArgs) Handles forgetpasslabel.MouseLeave
         forgetpasslabel.ForeColor = Color.RoyalBlue
     End Sub
+
+    Private Sub signuplabel_Click(sender As Object, e As EventArgs) Handles signuplabel.Click
+        Me.Hide()
+        Form2.Show()
+    End Sub
 End Class
